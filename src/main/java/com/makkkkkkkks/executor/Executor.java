@@ -44,10 +44,6 @@ public class Executor {
                 .limit(3)
                 .forEach(System.out::println);
 
-        /*
-
-- increase each number by 10;*/
-
         Random random = new Random();
         List<Integer> integers = random.ints(15).boxed().collect(Collectors.toList());
         System.out.println(integers);
@@ -66,7 +62,7 @@ public class Executor {
                 .forEach(System.out::println);
         System.out.println("increase each number by 10");
         integers.stream()
-                .map(integer -> integer+10)
+                .map(integer -> integer + 10)
                 .forEach(integer -> System.out.println(integer));
     }
 }
